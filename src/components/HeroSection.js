@@ -14,7 +14,7 @@ const HeroSection = () => {
         <div className="lg:w-1/2 flex flex-col items-start text-left">
           {/* Conditional Rendering of <h1> */}
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 leading-tight hidden md:block xl:block">
-            Elixir Multinational: Powering Progress, Redefining Possibilities
+            Elixir M: Redefining Possibilities
           </h1>
 
           <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-neutral-300 max-w-lg leading-relaxed">
