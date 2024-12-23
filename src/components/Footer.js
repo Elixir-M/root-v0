@@ -106,7 +106,7 @@ function Footer() {
             <div className="p-5">  
               <ul>
                 <p className="text-white font-bold text-3xl pb-6">
-                  Company <span className="text-blue-600">Name</span>
+                  Elixir <span className="text-blue-600">M</span>
                 </p>
                 <FloatingDock
                 mobileClassName="translate-y-20"
