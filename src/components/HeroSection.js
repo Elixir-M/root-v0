@@ -13,13 +13,12 @@ const HeroSection = () => {
         {/* Text Content */}
         <div className="lg:w-1/2 flex flex-col items-start text-left">
           {/* Conditional Rendering of <h1> */}
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 leading-tight hidden md:block xl:block">
-            Elixir M: Redefining Possibilities
+          <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 leading-tight hidden md:block xl:block">
+            Elixir M 
           </h1>
 
           <p className="mt-4 text-sm sm:text-base md:text-lg lg:text-xl xl:text-2xl text-neutral-300 max-w-lg leading-relaxed">
-            Experience the beauty of modern design with responsive layouts and a
-            spotlight effect that draws attention to the essential elements of the page.
+            Empowering businesses to innovate, transform, and thrive with our tailored solutions in IT consultation, development, and services
           </p>
         </div>
 
