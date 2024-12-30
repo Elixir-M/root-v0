@@ -13,6 +13,9 @@ import {
   IconNewSection,
   IconTerminal2,
 } from "@tabler/icons-react";
+import { VortexDemo } from "./VortexDemo";
+import FooterDock from "./FooterDock";
+import IconCloud from "./IconCloud";
 
 
 function Footer() {
@@ -93,68 +96,134 @@ function Footer() {
     },
 ]
 
+const iconSlugs = [
+  "typescript",
+  "javascript",
+  "dart",
+  "java",
+  "react",
+  "flutter",
+  "android",
+  "html5",
+  "css3",
+  "nodedotjs",
+  "express",
+  "nextdotjs",
+  "prisma",
+  "amazonaws",
+  "postgresql",
+  "firebase",
+  "nginx",
+  "vercel",
+  "testinglibrary",
+  "jest",
+  "cypress",
+  "docker",
+  "git",
+  "jira",
+  "github",
+  "gitlab",
+  "visualstudiocode",
+  "androidstudio",
+  "sonarqube",
+  "figma",
+];
+
   return (
     <div>
-      <LogoSlider />
+      <VortexDemo />
+      {/* <LogoSlider />  */}
       <div className="w-full rounded-md bg-black relative flex md:flex-row flex-col items-center justify-center antialiased">
-        <BackgroundBeams />
+        {/* <BackgroundBeams /> */}
         <footer className="bg-black w-full">
           {/* Main Footer Content */}
           <div className="w-full flex md:flex-row flex-col justify-around items-start p-10">
-            {/* Company Socials */}
-            <div className="p-5">  
-              <ul>
-                <p className="text-white font-bold text-3xl pb-6">
-                  Elixir <span className="text-blue-600">M</span>
+            {/* Company Socials - Updated with better vertical spacing */}
+            <div className="p-5 flex flex-col items-start">  
+              <div className="flex flex-col space-y-4">
+                <p className="text-white font-bold text-3xl">
+                  Company <span className="text-blue-600">Name</span>
                 </p>
-                <FloatingDock
-                mobileClassName="translate-y-20"
-                items={links}/>
-              </ul>
+                <div className="flex flex-col space-y-2">
+                  <ul className="space-y-2">
+                    <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
+                      <a href="">Who We Are</a>
+                    </li>
+                    <li class="relative text-gray-300 text-md font-semibold cursor-pointer hover:text-blue-600 transition-transform duration-200 hover:-translate-y-1">
+                      <a href="" class="relative after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-0 after:bg-blue-600 after:transition-[width] after:duration-200 hover:after:w-full">
+                        Get in Touch
+                      </a>
+                    </li>
+                    <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
+                      <a href="">Careers</a>
+                    </li>
+                    <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
+                      <a href="">Our Mission & Vision</a>
+                    </li>
+                    <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
+                      <a href="">Business Model</a>
+                    </li>
+                    <li className="text-gray-300 text-md font-semibold hover:text-blue-600 cursor-pointer">
+                      <a href="">Our Consultants</a>
+                    </li>
+                  </ul>
+                  {/* FooterDock aligned with text */}
+                  <div className="-ml-6 pt-8"> 
+                    <FooterDock mobileClassName="translate-y-20"/>
+                  </div>
+                </div> 
+              </div>
             </div>
 
-            {/* Content */}
-            <div className="p-5">
-              <ul>
-                <p className="text-white font-bold text-2xl pb-4">Company</p>
-                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Career</a>
-                </li>
-                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Sitemap</a>
-                </li>
-                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Event</a>
-                </li>
-                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Privacy Policy</a>
-                </li>
-              </ul>
-            </div>
-            <div className="p-5">
+          {/* Content */}
+          <div className="p-5 flex flex-col items-start">
               <ul>
                 <p className="text-white font-bold text-2xl pb-4">Services</p>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Blockchain</a>
+                  <a href="">Blockchain Solutions</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Mobile Development</a>
+                  <a href="">Mobile App Development</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
                   <a href="">Web Development</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Design</a>
+                  <a href="">Application Development</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">AI Development</a>
+                  <a href="">AI & Machine learning</a>
                 </li>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
-                  <a href="">Software Testing</a>
+                  <a href="">Internet of Things</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Graphic Design</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Quality Assuarance & Testing</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Game Development</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Supply Chain Solutions</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Cybersecurity Services</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Digital Marketing & Branding</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Cloud Solutions</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">System Integeration Services</a>
                 </li>
               </ul>
             </div>
-            <div className="p-5">
+            <div className="p-5 flex flex-col items-start">
               <ul>
                 <p className="text-white font-bold text-2xl pb-4">About</p>
                 <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
@@ -170,6 +239,28 @@ function Footer() {
                   <a href="">Our Technology Partners</a>
                 </li>
               </ul>
+              <br></br>
+              <br></br>
+              <ul>
+                <p className="text-white font-bold text-2xl pb-4">Blogs</p>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">About Company</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 hover:underline transition-colors duration-200 cursor-pointer">
+                  <a href="">Vision & Mission</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Become our Partner</a>
+                </li>
+                <li className="text-gray-300 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer">
+                  <a href="">Our Technology Partners</a>
+                </li>
+              </ul>
+            </div>
+            
+
+          <div className="relative flex size-full max-w-xl items-center justify-center overflow-hidden rounded-lg px-8 min-w-64 sm:pb-0 pb-4">
+            <IconCloud iconSlugs={iconSlugs}/>
             </div>
           </div>
 
