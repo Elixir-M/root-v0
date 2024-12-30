@@ -19,6 +19,7 @@ import { Navbar } from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { StickyScrollRevealDemo } from "@/components/StickyScrollRevealDemo";
 import { black } from "tailwindcss/colors";
+import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarouselDemo";
 
 
 export default function Home() {
@@ -232,8 +233,9 @@ export default function Home() {
         
         <HeroScrollDemo/>
         <StickyScrollRevealDemo/>
-        <HoverEffect items={projects}/>
-        <VortexDemo/>
+        {/* <HoverEffect items={projects}/> */}
+        <AppleCardsCarouselDemo />
+        {/* <VortexDemo/> */}
         {/* <ExpandableCardDemo/> */}
         {/* <GoogleGeminiEffect/> */}
         {/* <HeroHighlightDemo/> */}
